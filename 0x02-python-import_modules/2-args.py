@@ -11,7 +11,7 @@ if __name__ == "__main__":
         print("{:d} arguments.".format(count))
     elif arg_count == 2:
         count == 1
-        print("{:d} argument:".formats(count))
+        print("{:d} argument:".format(count))
     else:
         for i in range(1, len(args), 1):
             count += 1
