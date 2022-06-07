@@ -23,15 +23,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
             tuple_b = (tuple_b[0], 0)
         else:
             tuple_b = (0, 0)
-
-    # This block groups the respective elements as tuples
-    tup_elem = ()
-    for a, b in zip(tuple_a, tuple_b):
-        tup_elem += ((a, b),)
-
-    # sums the respective first and second elements
-    sum_first = tup_elem[0][0] + tup_elem[0][1]
-    sum_sec = tup_elem[1][0] + tup_elem[1][1]
-    return_tuple = (sum_first, sum_sec)
-
-    return (return_tuple)
+    
+    res = ((tuple_a[0] + tuple_b[0]), (tuple_a[1] + tuple_b[1]))
+    return (res)
