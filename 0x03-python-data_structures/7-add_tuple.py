@@ -10,7 +10,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     a_len = len(tuple_a)
     b_len = len(tuple_b)
 
-   # if tuples have less than 2 elements, use 0 to replace missing element
+# if tuples have less than 2 elements, use 0 to replace missing element
     if a_len < 2:
         if a_len == 1:
             tuple_a = (tuple_a[0], 0)
