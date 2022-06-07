@@ -5,8 +5,8 @@ def element_at(my_list, idx):
     Args:
         my_list: list of integers
         idx: the index of the element to be retrieved
-    
-    Returns: None if idx is negative or out of range, otherwise returns 
+
+    Returns: None if idx is negative or out of range, otherwise returns
              element at index idx
 
     """
