@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
-    """A function that converts a string to uppercase, similar to string.upper()
+    """A function that converts a string to uppercase,\
+       similar to string.upper()
 
        Args:
        str: string to be converted
