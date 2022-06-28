@@ -1,0 +1,121 @@
+===========================
+How to Use 0-add_integer.py
+===========================
+
+This library is very simple, since it has only one function
+called ``add_integer()``.
+
+Import the function
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Numbers
+=======
+``add_integer()`` returns the integer sum of its arguments.
+Floats are casted to int and the sum is done using the ``+`` operator.
+
+::
+
+>>> add_integer(2, 3)
+5
+
+Works with single parameter too, since b defaults to 98
+
+::
+
+>>> add_integer(2)
+100
+
+Floating point values
+=====================
+::
+
+>>> add_integer(2.0, 3)
+5
+>>> add_integer(2.0, 3.0)
+5
+
+Zero values
+===========
+::
+
+>>> add_integer(0)
+98
+>>> add_integer(0, 2)
+2
+>>> add_integer(2, 0)
+2
+>>> add_integer(0, 0)
+0
+
+Negative parameters
+===================
+::
+
+>>> add_integer(-2, 3)
+1
+>>> add_integer(2, -3)
+-1
+>>> add_integer(-2, -3)
+-5
+>>> add_integer(-2)
+96
+>>> add_integer(-2.0, 3)
+1
+>>> add_integer(2.0, -3.0)
+-1
+>>> add_integer(-2.0, -3.0)
+-5
+
+Non-Numbers
+===========
+Because the specifications of ``add_integer()`` only allows for int and float
+parameters, it doesn't work with other data types even though they support ``+`` operator
+
+::
+
+>>> add_integer('a', 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(2, 'b')
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer('a', 'b')
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer('a')
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(2, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer(2, [3])
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer([2])
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(0, [3, 'b'])
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer([2, 'a'])
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(0, {2:3})
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer({2:3})
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(0, 5j)
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer(5j)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+=================================
+AUTHOR: EMMANUEL DEMILADE ADEBAYO
+=================================
