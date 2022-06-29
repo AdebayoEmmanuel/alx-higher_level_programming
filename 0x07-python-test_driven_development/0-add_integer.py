@@ -2,6 +2,8 @@
 """
     TDD rules
 """
+
+
 def add_integer(a, b=98):
     """
         This function sums two integers a and b
