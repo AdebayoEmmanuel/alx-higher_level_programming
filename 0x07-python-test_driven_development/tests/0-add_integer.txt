@@ -115,6 +115,9 @@ TypeError: b must be an integer
 >>> add_integer(5j)
 Traceback (most recent call last):
 TypeError: a must be an integer
+>>> add_integer(float('NaN'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
 
 =================================
 AUTHOR: EMMANUEL DEMILADE ADEBAYO
