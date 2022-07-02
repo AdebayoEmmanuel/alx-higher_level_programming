@@ -1,5 +1,4 @@
-#!usr/bin/python3
-
+#!/usr/bin/python3
 """This module contains a function which divides a matrix."""
 
 
