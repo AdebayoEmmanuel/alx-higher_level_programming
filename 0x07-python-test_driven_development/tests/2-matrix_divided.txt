@@ -82,6 +82,13 @@ Empty List
               ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+List with string
+    >>> matrix_divided([[3, “9”], [15, 3]],3)
+	Traceback (most recent call last):
+                ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
 List with Values
 
     >>> matrix_divided([1, 2, 3], 2)
