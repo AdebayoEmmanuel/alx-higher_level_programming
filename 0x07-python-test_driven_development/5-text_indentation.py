@@ -15,6 +15,6 @@ def text_indentation(text):
             print(text[x : i + 1])
             print()
             x = i + 2
-            bool = True
-    if i + 1 == len(text) and bool is False:
-        print(text)
+            check = True
+        if i + 1 == len(text) and check is False:
+            print(text)
