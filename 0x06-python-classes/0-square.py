@@ -2,6 +2,8 @@
 """This module contains one empty
     square class
 """
+
+
 class Square:
     """empty square class"""
     pass
