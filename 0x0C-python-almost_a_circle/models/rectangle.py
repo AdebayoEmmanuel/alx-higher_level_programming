@@ -1,8 +1,18 @@
 #!/usr/bin/python3
-"""This rectangle inherits base"""
-
-
+""" 4-main """
 from models.base import Base
+
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(4, 6)
+    r1.display()
+
+    print("---")
+
+    r1 = Rectangle(2, 2)
+    r1.display()  # !/usr/bin/python3
+"""This rectangle inherits base"""
 
 
 class Rectangle(Base):
@@ -79,3 +89,13 @@ class Rectangle(Base):
     def area(self):
         """returns area of a rectangle"""
         return self.height * self.width
+
+    def display(self):
+        """This method prints the rectangle"""
+        while self.__height:
+            print("#" * self.__width)
+            self.__height -= 1
+
+    def __str__(self):
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y,
+                                                     self.__width, self.__height)
