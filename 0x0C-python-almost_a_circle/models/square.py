@@ -39,7 +39,7 @@ class Square(Rectangle):
             arguments
         """
 
-        for i in len(args):
+        for i in range(len(args)):
             if i == 0:
                 self.id = args[i]
             elif i == 1:
@@ -49,7 +49,7 @@ class Square(Rectangle):
             elif i == 3:
                 self.y = args[i]
 
-        if not args or if len(args) == 0:
+        if not args or len(args) == 0:
             if "id" in kwargs:
                 self.id = kwargs["id"]
             if "size" in kwargs:
@@ -58,3 +58,18 @@ class Square(Rectangle):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
+
+    def to_dictionary(self):
+        """Returns a dictionary representation of a square"""
+        dict_self = {}
+        for elem in ["id", "x", "size", "y"]:
+            if elem == "id":
+                dict_self[elem] = self.id
+            if elem == "x":
+                dict_self[elem] = self.x
+            if elem == "size":
+                dict_self[elem] = self.size
+            if elem == "y":
+                dict_self[elem] = self.size
+
+        return dict_self

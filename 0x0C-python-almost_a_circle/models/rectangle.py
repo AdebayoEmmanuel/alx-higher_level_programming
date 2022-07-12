@@ -100,6 +100,7 @@ class Rectangle(Base):
             self.__height -= 1
 
     def __str__(self):
+        """magic string representation of rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                        self.__x,
                                                        self.__y,
@@ -134,3 +135,19 @@ class Rectangle(Base):
                 self.__x = kwargs["x"]
             if "y" in kwargs:
                 self.__y = kwargs["y"]
+
+    def to_dictionary(self):
+        """dictionary representation of rectangle objeect"""
+        self_dict = {}
+        for elem in ["id", "width", "height", "x", "y"]:
+            if elem == "id":
+                self_dict["id"] = self.id
+            if elem == "width":
+                self_dict["width"] = self.width
+            if elem == "height":
+                self_dict["height"] = self.height
+            if elem == "x":
+                self_dict["x"] = self.x
+            if elem == "y":
+                self_dict["y"] = self.y
+        return self_dict
