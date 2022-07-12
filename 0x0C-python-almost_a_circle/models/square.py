@@ -70,6 +70,6 @@ class Square(Rectangle):
             if elem == "size":
                 dict_self[elem] = self.size
             if elem == "y":
-                dict_self[elem] = self.size
+                dict_self[elem] = self.y
 
         return dict_self
