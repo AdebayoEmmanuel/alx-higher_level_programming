@@ -95,10 +95,31 @@ class Rectangle(Base):
         for y in range(self.y):
             print()
         while self.__height:
-            print(' ' * self.__x, end='' )
+            print(' ' * self.__x, end='')
             print("#" * self.__width)
             self.__height -= 1
 
     def __str__(self):
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y,
-                                                       self.__width, self.__height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.__x,
+                                                       self.__y,
+                                                       self.__width,
+                                                       self.__height)
+
+    def update(self, *args):
+        """This method allows you to assign
+            values to attributes of object
+            rectangle by passing in arguments
+            mapped to the rectangle attributes
+        """
+        for i in range(len(args)):
+            if i == 0:
+                self.id = args[i]
+            elif i == 1:
+                self.__width = args[i]
+            elif i == 2:
+                self.__height = args[i]
+            elif i == 3:
+                self.__x = args[i]
+            elif i == 4:
+                self.__y = args[i]
