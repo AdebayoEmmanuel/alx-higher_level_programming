@@ -106,7 +106,7 @@ class Rectangle(Base):
                                                        self.__width,
                                                        self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """This method allows you to assign
             values to attributes of object
             rectangle by passing in arguments
@@ -123,3 +123,14 @@ class Rectangle(Base):
                 self.__x = args[i]
             elif i == 4:
                 self.__y = args[i]
+        if (not args) or args is None:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "height" in kwargs:
+                self.__height = kwargs["height"]
+            if "width" in kwargs:
+                self.__width = kwargs["width"]
+            if "x" in kwargs:
+                self.__x = kwargs["x"]
+            if "y" in kwargs:
+                self.__y = kwargs["y"]
