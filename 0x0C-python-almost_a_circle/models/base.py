@@ -51,7 +51,7 @@ class Base:
         jsonlist = []
         filename = cls.__name__ + ".json"
         if list_objs:
-            for obj in list_obj:
+            for obj in list_objs:
                 jsonlist.append(obj.to_dictionary())
 
         storage = cls.to_json_string(jsonlist)
