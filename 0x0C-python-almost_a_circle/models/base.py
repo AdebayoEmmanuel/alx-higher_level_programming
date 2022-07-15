@@ -57,3 +57,11 @@ class Base:
         storage = cls.to_json_string(jsonlist)
         with open(filename, "w", encoding="utf-8") as myfile:
             myfile.write(storage)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """returns the list of the JSON string representation"""
+        if not json_string or len(json_string) == 0:
+            return []
+
+        return json.loads(json_string)
