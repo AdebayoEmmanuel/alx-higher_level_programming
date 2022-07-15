@@ -4,7 +4,8 @@
     modeled after this one
 """
 import json
-import io
+import csv
+import turtle
 
 
 class Base:
@@ -84,7 +85,7 @@ class Base:
         filename = cls.__name__ + ".json"
 
         try:
-            with open(filename, encoding="utf-8") as myfile:
+            with open(filename, "r", encoding="utf-8") as myfile:
                 read = myfile.read()
                 dictionary_string = cls.from_json_string(read)
                 instance_list = []
