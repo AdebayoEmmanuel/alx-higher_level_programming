@@ -3,6 +3,7 @@
     other classes to be
     modeled after this one
 """
+import json
 
 
 class Base:
@@ -27,6 +28,7 @@ class Base:
         """
         Base.__nb_objects = 0
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """A method that returns json encoded
             list of dictionaries
@@ -38,3 +40,7 @@ class Base:
                 "[]" - if list_dictionaries is None or empty
                 JSON string representation of list_dictionaries
         """
+        if not list_dictionaries:
+            return "[]"
+
+        return json.dumps(list_dictionaries)

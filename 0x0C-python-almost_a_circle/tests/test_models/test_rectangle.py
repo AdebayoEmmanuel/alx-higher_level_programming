@@ -85,4 +85,13 @@ class TestRectangle(unittest.TestCase):
         msg = "width must be > 0"
         self.assertEqual(str(cm.exception), msg)
 
+        with self.assertRaises(ValueError) as cm:
+            rect_4 = Rectangle(1.5, 1.5)
+        msg = 'height must be an integer'
+        self.assertEqual(str(cm.exception), msg)
+
+
+
+
+
 
