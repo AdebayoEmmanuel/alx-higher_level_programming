@@ -4,6 +4,7 @@
     modeled after this one
 """
 import json
+import io
 
 
 class Base:
