@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""This base geometry raises error"""
+"""Defines a base geometry class BaseGeometry."""
 
 
 class BaseGeometry:
-    """A class that raises an error"""
+    """Represent base geometry."""
 
-    def area:
-        """Raises an exception"""
-        raise("area() is not implemented")
+    def area(self):
+        """Not implemented."""
+        raise Exception("area() is not implemented")
