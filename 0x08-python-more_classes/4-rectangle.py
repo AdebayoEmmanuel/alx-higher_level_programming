@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""class documentation"""
+
+
 class Rectangle:
     """ Init Class width set 0 and height set 0"""
     def __init__(self, width=0, height=0):
