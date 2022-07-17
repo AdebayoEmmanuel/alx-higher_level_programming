@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""class documentation"""
+
+
 class Rectangle:
     """This class is for manage a rectangle"""
 
