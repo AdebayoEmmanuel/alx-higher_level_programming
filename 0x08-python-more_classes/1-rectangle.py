@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""rectangle full implementation"""
+
+
 class Rectangle:
     """This class defines a rectangle"""
 
