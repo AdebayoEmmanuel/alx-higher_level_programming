@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""this function returns python object from json."""
+"""Converts a JSON-to-object."""
 import json
 
 
 def from_json_string(my_str):
-    """Decodes normal Python object from JSON."""
+    """Return the Python object representation of a JSON string."""
     return json.loads(my_str)
