@@ -6,4 +6,4 @@ import json
 def save_to_json_file(my_obj, filename):
     """wrrites python obj to file as JSON str."""
     with open(filename, "w") as myFile:
-        json.dumps(my_obj, myFile)
+        json.dump(my_obj, myFile)
