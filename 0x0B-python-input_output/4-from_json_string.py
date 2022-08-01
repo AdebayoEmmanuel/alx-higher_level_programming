@@ -4,10 +4,5 @@ import json
 
 
 def append_write(my_str):
-    """Decodes normal Python object from JSON.
-    Args:
-        my_str(str): JSON string representation
-    Returns:
-        Python object
-    """
+    """Decodes normal Python object from JSON."""
     return JSON.loads(my_str)
