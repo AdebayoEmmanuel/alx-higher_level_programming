@@ -3,6 +3,6 @@
 import json
 
 
-def append_write(my_str):
+def from_json_string(my_str):
     """Decodes normal Python object from JSON."""
-    return JSON.loads(my_str)
+    return json.loads(my_str)

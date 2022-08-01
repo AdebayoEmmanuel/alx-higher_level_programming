@@ -3,6 +3,6 @@
 import json
 
 
-def append_write(my_obj):
+def to_json_string(my_obj):
     """Encodes normal Python object string to JSON"""
     return JSON.dumps(my_obj)
