@@ -5,3 +5,4 @@ FROM
 	second_table
 GROUP BY
 	score
+DESC;
