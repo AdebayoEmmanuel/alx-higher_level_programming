@@ -1,10 +1,8 @@
 #!/usr/bin/node
 
-const num = process.argv[2];
-
-if (parseInt(num)) {
-  for (let i = 0; i < num; i++) {
-    console.log('x'.repeat(num));
+if (parseInt(process.argv[2])) {
+  for (let i = 0; i < process.argv[2]; i++) {
+    console.log('x'.repeat(process.argv[2]));
   }
 } else {
   console.log('Missing size');
