@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 if (parseInt(process.argv[2])) {
-  for (let i = 0; i < process.argv[2]; i++) {
+  for (let i = 0; i <= process.argv[2] - 1; i++) {
     console.log('x'.repeat(process.argv[2]));
   }
 } else {
