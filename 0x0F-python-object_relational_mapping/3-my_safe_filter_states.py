@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""filter states starting with N, ordered by state id"""
+"""filter search state by command line arg with sqlinjection guard"""
 import MySQLdb
 import sys
 

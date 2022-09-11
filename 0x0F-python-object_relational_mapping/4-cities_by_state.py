@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""search state from command line arg"""
+"""Connect db and query all cities in ascending order of id"""
 import MySQLdb
 import sys
 
@@ -10,10 +10,10 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     # execute SQL query
-    cur.execute(
-        "SELECT id, name FROM states WHERE name='{}'\
-                ORDER BY states.id ASC;".format(sys.argv[4],))
-
+    cur.execute("SELECT cities.id, cities.name, states.name\
+            FROM states\
+            JOIN cities ON cities.state_id=states.id\
+            ORDER BY cities.id ASC;")
     for row in cur.fetchall():
         print(row)
 
