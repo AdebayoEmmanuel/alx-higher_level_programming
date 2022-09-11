@@ -15,10 +15,10 @@ if __name__ == "__main__":
             JOIN cities ON cities.state_id=states.id\
             WHERE states.name LIKE %s\
             ORDER BY cities.id ASC;", (sys.argv[4],))
-    
+
     cities_list = []
     city_output = ""
-    #put all cities inside list
+    # put all cities inside list
     for row in cur.fetchall():
         cities_list.append(row[1])
 
