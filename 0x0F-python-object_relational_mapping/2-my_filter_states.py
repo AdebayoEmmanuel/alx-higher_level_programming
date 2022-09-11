@@ -11,8 +11,8 @@ if __name__ == "__main__":
 
     # execute SQL query
     cur.execute(
-        "SELECT id, name FROM states WHERE name LIKE %s\
-                ORDER BY states.id ASC;", (sys.argv[4],))
+        "SELECT id, name FROM states WHERE name='{}'\
+                ORDER BY states.id ASC;".format(sys.argv[4],))
 
     for row in cur.fetchall():
         print(row)
