@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """class definition for state model"""
 
 import sqlalchemy
