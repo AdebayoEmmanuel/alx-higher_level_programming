@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""Connect db and query all states i ascending order"""
 import MySQLdb
 import sys
 
