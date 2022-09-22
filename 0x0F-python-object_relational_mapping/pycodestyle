@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# pycodestyle check for all python scripts
-
-pycodestyle *.py
