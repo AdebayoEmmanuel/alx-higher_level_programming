@@ -1,8 +1,8 @@
 exports.logMe = function (item){
-    this.count = 0;
-    let cnt = this.count;
+    this.prototype.count = 0;
+    let cnt = this.prototype.count;
     let obj = {cnt : item};
-    this.count++;
+    this.prototype.count++;
     return obj
 
 }
