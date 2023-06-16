@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
 exports.logMe = function (item){
-    this.prototype.count = 0;
-    let cnt = this.prototype.count;
+    this.count = 0;
+    let cnt = this.count;
     let obj = {cnt : item};
-    this.prototype.count++;
+    this.count++;
     return obj
 
 }
